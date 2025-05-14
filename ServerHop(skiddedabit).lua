@@ -4,6 +4,8 @@ local Players = game:GetService("Players")
 local PlaceId = game.PlaceId
 local JobId = game.JobId
 
+local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
+
 local function ServerHop()
     if httprequest then
         local servers = {}
